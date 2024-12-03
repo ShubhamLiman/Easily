@@ -1,0 +1,53 @@
+<div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title bold" id="staticBackdropLabel">
+            Experience easily!
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.href='/';"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/register" method="post" class="p-2">
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">Name</span>
+                <input required="" name="name" type="text" aria-label="name" class="form-control" placeholder="enter your name">
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">Email</span>
+                <input required="" name="email" type="email" aria-label="email" class="form-control" placeholder="enter your email">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">Password</span>
+                <input required="" name="password" type="password" aria-label="password" class="form-control" placeholder="enter your password">
+              </div>
+            </div>
+  
+            <button type="submit" class="btn btn-md mt-2 lbtn" style="background-color: #FF2C90; color: white;">Register</button>
+          </form>
+        </div>
+        <div class="modal-footer d-flex align-items-centre justify-content-between">
+          <div class="left d-flex flex-row align-items-centre justify-content-centre">
+            <!-- Button trigger login modal -->
+            <span>Already registered?</span>
+            <button type="button" class="btn btn-sm px-3 btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal" onclick="location.href='/login';">
+              login
+            </button>
+          </div>
+          <div class="right">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
